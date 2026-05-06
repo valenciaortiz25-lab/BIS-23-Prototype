@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor"></div>
+
+    <ul class="navbar">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+<div class="invoice-container">
+
+    <!-- HEADER -->
+    <header class="header-banner">
+        <h1>PurpleBanks</h1>
+        <p>123 Drewy Lane, Bronx, NY</p>
+        <p>123-456-7890</p>
+    </header>
+
+    <!-- INVOICE INFO -->
+    <section class="invoice-info">
+        <h2>Invoice #100</h2>
+
+        <label>Date:</label>
+        <input type="date" id="invoiceDate">
+    </section>
+
+    <!-- CUSTOMER INFO -->
+    <section class="billing-section">
+        <h3>Customer</h3>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Address">
+        <input type="text" placeholder="Phone">
+    </section>
+
+    <!-- TABLE -->
+    <table class="invoice-table" id="invoiceTable">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- BUTTONS -->
+    <section class="invoice-buttons">
+        <button type="button" onclick="addRow()">+ Add Row</button>
+        <button type="button" onclick="clearForm()">Clear</button>
+    </section>
+
+    <!-- TOTALS -->
+    <section class="totals-box">
+        <label>Tax Rate (%)</label>
+        <input type="number" id="taxRate" value="0" min="0">
+
+        <label>Other Costs</label>
+        <input type="number" id="extraCosts" value="0" min="0">
+
+        <hr>
+
+        <p>Subtotal: <span id="subtotal">$0.00</span></p>
+        <p>Total: <span id="total">$0.00</span></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="invoice-footer">
+        <p>Make all checks payable to PurpleBanks</p>
+        <p>Questions? purplebanks23@gmail.com</p>
+        <p><strong>Thank you for your business!</strong></p>
+    </footer>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+<script src="cursor.js"></script>
+
+</body>
+</html>
