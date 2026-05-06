@@ -1,0 +1,310 @@
+/* Background */
+html, body {
+    margin: 0;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f6e6ef;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    cursor: none;
+}
+
+/* Header */
+header {
+    font-family: 'Dancing Script';
+    text-align: center;
+    padding: 50px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    font-style: italic;
+}
+
+/* Bio */
+.bio {
+    font-family: 'Dancing Script';
+    color: #555;
+    text-align: center;
+    padding: 40px;
+}
+
+.logo, .profile-img {
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Navbar */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffddef;
+    text-align: center;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: #232331;
+    padding: 14px 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: #f5a1ea;
+    color: white;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .navbar li {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background: #feddf3;
+    color: #3f2f3e;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Cursor */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d870b0;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+
+/* Container (used for forms + results) */
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: rgba(255, 221, 239, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    text-align: center;
+    font-family: 'Dancing Script';
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #d870b0;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Buttons */
+button {
+    font-family: 'Dancing Script';
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f5a1ea;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #d870b0;
+}
+
+/* Button container */
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.problem {
+    background: #ffddef;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Assignment buttons */
+.assignment-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.assignment-card {
+    font-family: 'Dancing Script';
+    text-decoration: none;
+    background: #ffddef;
+    color: #232331;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.assignment-card:hover {
+    background: #f5a1ea;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Invoice Container */
+.invoice-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(255, 221, 239, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    font-family: 'Dancing Script';
+}
+
+/* Header */
+.header-banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sections */
+.invoice-info,
+.billing-section,
+.totals-box {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Inputs */
+.invoice-container input {
+    width: 80%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #d870b0;
+    text-align: center;
+}
+
+/* Table */
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.invoice-table th {
+    background-color: #ffddef;
+    padding: 10px;
+}
+
+.invoice-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Buttons */
+.invoice-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Totals */
+.totals-box {
+    background: #ffddef;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Footer */
+.invoice-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* IMAGE SLIDER */
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+/* Image stack container */
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;   /* space between images */
+    margin: 40px auto;
+}
+
+/* Individual images */
+.stack-img {
+    width: 60%;          /* medium size */
+    max-width: 500px;    /* prevents them from getting too big */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}

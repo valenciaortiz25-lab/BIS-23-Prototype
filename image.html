@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valencia Ortiz - BIS 23</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <ul class="navbar">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+</ul>
+
+
+    <header>
+        <img src="toy.jpg" alt="Logo" class="logo">
+        <h1>Image Slider</h1>
+        <p class="intro">
+            Welcome to my Image Slider assignment page!
+            Here, you will find a simple image slider that I 
+            created using HTML, CSS, and JavaScript. The 
+            slider allows you to navigate through a series of 
+            images using previous and next buttons. I hope you e
+            njoy browsing through the images and exploring the functionality 
+            of the slider!
+        </p>
+    </header>
+    <section class="slider-container">
+
+    <div class="slider" id="slider">
+        <img class="slide" src="fidget1.jpg" alt="Slide 1">
+        <img class="slide" src="fidget2.jpg" alt="Slide 2">
+        <img class="slide" src="fidget3.jpg" alt="Slide 3">
+        <img class="slide" src="fidget4.jpg" alt="Slide 4">
+    </div>
+
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+</section>
+
+    <footer>
+        &copy; 2026 Valencia Ortiz. All Rights Reserved
+    </footer>
+
+    <script src="cursor.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
